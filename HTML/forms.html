@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+<body>
+    <form action = "/demo">
+        <h1><center>Forms Demo</center></h1>
+        <p>
+            <label for="Username">Enter the Username</label>
+            <input type = "text" id = "Username" placeholder="Username" name = "username">
+        </p>
+        <p>
+            <label for = "Password">Enter the Password</label>
+            <input type = "password" id = "Password" placeholder = "Password" name = "password">
+        </p>
+        <p>
+            <label for ="bday">Birthday</label>
+            <input type = "number" id = "bday" min = "1" max = "100" step ="2" placeholder ="date">
+        </p>
+        <p>
+            <label for = "Age verify">Above 18</label>
+            <input type = "checkbox" id = "Age verify" name = "age">
+        </p>
+        <button type = "button">Submit</button>
+        <input type = "submit" value = "Click me to submit">
+    </form>
+    <h2>Hijacking the searches</h2>
+    <h3>HUB4U Search</h3>
+    <form action ="https://new4.hdhub4u.cl/search.html">
+        <input type = "text" name = "q">
+        <button>Movie Serach</button>
+    </form>
+    <h3>Youtube Search</h3>
+    <form action = "https://www.youtube.com/results">
+        <input type = "text" name = "search_query">
+        <button>Youtube Search</button>
+    </form>
+    <h2>Radio Demo</h2>
+    <form action="/ex">
+        <p>
+            <input type = "radio" name = "size" id = "xs" value = "xs">
+            <label for = "xs">XS</label><br>
+            <input type = "radio" name = "size" id = "s" value = "s">
+            <label for = "s">S</label><br>
+            <input type = "radio" name = "size" id = "m" value = "m">
+            <label for = "m">M</label><br>
+        </p>
+        <p>
+            <label for = "meal">Select the Meal</label>
+            <select name = "meal " id = "meal">
+                <option value = "">--PLEASE SELECT ANY MEAL--</option>
+                <option value="Paneer">Paneer</option>
+                <option value = "Chicken">Chicken</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of cheese</label>
+            <input type="range" min = "1" max="100" step = "7" id = "cheese" name = "cheese level">
+        </p>
+        <p>
+            <label for = "Feedback">Feedback</label><br>
+            <textarea id ="Feedback" name ="Feedback" rows="10" cols="40" placeholder="Type something here"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+    <h2>Validation demo</h2>
+    <form action ="/demo.com">
+        <p>
+            <label for = "username">Username</label>
+            <input type = "text" id = "username" minlength = "3" maxlength="10" required>
+        </p>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

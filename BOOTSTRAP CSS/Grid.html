@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="C:\MERN\BOOTSTRAP CSS\B_Container.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-1 text-center text-primary">Grid System</h1>
+        <div class="row">
+        <!-- In a total row there will be 12 units so we need to divide it accordingly in a page -->
+            <div class="col-3 bg-info">3</div>
+            <div class="col-6 bg-danger">6</div>
+            <div class="col-3 bg-warning">3</div>
+        </div>
+        <div class="row">
+            <div class="col-4 bg-info">4</div>
+            <div class="col-4 bg-danger">4</div>
+            <div class="col-4 bg-warning">4</div>
+        </div>
+        <!-- Automatic sizing -->
+        <div class="row">
+            <div class="col bg-info">Autosized</div>
+            <div class="col bg-danger">Autosized</div>
+            <div class="col bg-info">Autosized</div>
+            <div class="col bg-primary">utosized</div>
+        </div>
+        <h2 class="display-3 text-center">Responsive Grid</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6  col-xl-3 bg-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi sint laborum quis, ipsam beatae nulla saepe necessitatibus ad! Quasi consequuntur accusamus eligendi dicta, dolorum ducimus doloremque cum beatae sequi.
+            </div>
+            <div class="col-md-6 col-xl-3 bg-success ">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor corrupti illo suscipit alias, modi obcaecati tenetur ipsam est sequi fugit enim eum, nostrum sit excepturi voluptate quo incidunt, eveniet distinctio!
+                Voluptas necessitatibus suscipit voluptatem consequuntur optio voluptatum itaque consectetur. Rem saepe consectetur ab. Molestias libero blanditiis repudiandae illo sequi, quibusdam ea, consectetur neque mollitia ab porro pariatur voluptates laudantium tenetur?
+            </div>
+            <div class="col-md-6 col-xl-3 bg-info ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi sint laborum quis, ipsam beatae nulla saepe necessitatibus ad! Quasi consequuntur accusamus eligendi dicta, dolorum ducimus doloremque cum beatae sequi.
+            </div>
+            <div class="col-md-6 col-xl-3 bg-success align-self-end ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi sint laborum quis, ipsam beatae nulla saepe necessitatibus ad! Quasi consequuntur accusamus eligendi dicta, dolorum ducimus doloremque cum beatae sequi.
+            </div>
+        </div>
+        <div class="row"><!--no-gutters {to remove the blank space between the images} --> -->
+            <div class="col-xl-4 col-md-3">
+                <img class="img-fluid" 
+                src="https://i.pinimg.com/736x/ae/41/5a/ae415abed049a5c80fad3c9b46875f7c.jpg" alt="">
+            </div>
+            <div class="col-xl-4 col-md-3">
+                <img class="img-fluid"
+                src="https://i.pinimg.com/736x/ad/58/13/ad58131d2ad583770d05a8b5165056a4.jpg" alt="">
+            </div>
+            <div class="col=xl-4 col-md-3">
+                <img class="img-fluid"
+                src="https://i.pinimg.com/1200x/6f/69/01/6f6901eb58f53b6e9d07f9f8f33b1c1f.jpg" alt="">
+            </div>
+        </div>
+        <h3 class="display-4 text-center">Justify Content</h3>
+        <div class="row border justify-content-center">
+            <div class="col-4 bg-success">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi vel similique vero rerum omnis nobis sed laborum voluptate vitae, explicabo reprehenderit. Nihil, culpa? Asperiores culpa fuga, dolor eaque sapiente maiores!
+            </div>
+            <div class="col-4 bg-warning">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi vel similique vero rerum omnis nobis sed laborum voluptate vitae, explicabo reprehenderit. Nihil, culpa? Asperiores culpa fuga, dolor eaque sapiente maiores!
+            </div>
+
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;/*sort the elements in a single row  */
+    flex-direction: row;
+    /*flex-direction: row-reverse; similarly column & column-reverse*/
+    /*Justify-content*/
+    justify-content: center; /*default for left to right row*/
+    /*justify-content: flex-end;*/
+    /* justify-content: center; */
+    /* justify-content: space-evenly; space-around also */
+    flex-wrap: wrap;/*wrap-reverse*/
+    /*  align-items: flex-end;flex-start, flex-end */
+}
+#container div{
+    width: 200px;
+    height: 200px;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+div:nth-of-type(1){
+    flex-grow: 1;
+    flex-shrink: 0; /*does not reduces its size when we minimize the page*/
+}
+div:nth-of-type(5){
+    flex-grow: 1;
+}
+/*flex-shorthand
+flex: flex-grow |flex-shrink | flex-basis(with units)*/
+

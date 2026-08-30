@@ -1,0 +1,74 @@
+h1{
+    /*color:#2B2A29;
+    color:#D1AB3E;
+    color:#EC1C24;*/
+    text-align:center;
+    font-weight: 400;
+    text-decoration: underline;
+    font-size: 90px;/*can use overline and line-through with color in front of it*/
+    text-transform: uppercase,lowercase;
+    letter-spacing: 10px;
+}
+p{
+    line-height:2;
+}
+body{
+    background :white;
+}
+
+/*Selectors*/
+/**{
+    background: black;/*universal selector
+}*/
+button{
+    font-size: 30px;
+    background-color: #2F4F4F;
+    color: white;
+}
+h1,p{
+    color: black;
+}
+/*id selector8*/
+#Signup{
+    color: white;
+    background-color: black;
+}
+/*span class*/
+span{
+    color:blue;
+}
+.tag{
+    background-color: red;
+    color: yellow;
+}
+/*descendent selector*/
+.post{
+    background-color: white;
+}
+/*adjacent selectors {right after the tag which is been mentioned*/
+h2 + button{
+    background-color: pink;
+}
+/*direct selector*/
+footer > h3{
+    color: palegreen;
+}
+/*attribute selector*/
+input[type="password"]{
+    color: pink;
+}
+/*Pseudo Classes*/
+button:hover{
+    color: red;
+    background-color: black;
+}
+button:active{
+    background-color: aqua;
+}
+/*pseudo elements*/
+p::first-letter{
+    font-size: 30px;
+}
+p::selection{
+    color: pink;
+}
