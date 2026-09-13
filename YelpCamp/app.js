@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const mongoose = require("mongoose");
+const ejsMate = require("ejs-mate");
 const Campground = require("./models/campground");
 const methodOverride = require("method-override");
 
@@ -15,6 +16,7 @@ mongoose
     console.log(err);
   });
 
+app.engine("ejs", ejsMate);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
@@ -65,11 +67,11 @@ app.put("/campgrounds/:id", async (req, res) => {
   res.redirect(`/campgrounds/${campground._id}`);
 });
 
-app.delete('/campgrounds/:id',async(req,res)=>{
-    const { id } = req.params;
-    await Campground.findByIdAndDelete(id);
-    res.redirect('/campgrounds');
-})
+app.delete("/campgrounds/:id", async (req, res) => {
+  const { id } = req.params;
+  await Campground.findByIdAndDelete(id);
+  res.redirect("/campgrounds");
+});
 
 app.listen(3000, () => {
   console.log("Serving on Port 3000");
