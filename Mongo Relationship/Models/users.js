@@ -15,6 +15,7 @@ const userSchema = new mongoose.Schema({
   last: String,
   address: [
     {
+      _id: { _id: false },
       street: String,
       city: String,
       state: String,
@@ -25,7 +26,7 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", userSchema);
 
-const makeUser = async() => {
+const makeUser = async () => {
   const u = new User({
     first: "Harry",
     last: "Potter",
@@ -34,10 +35,9 @@ const makeUser = async() => {
     street: "123 seasame st",
     city: "New York",
     state: "NY",
-    country: "USa", 
+    country: "USa",
   });
   const res = await u.save();
-  console.log(res)
-
+  console.log(res);
 };
 makeUser();
