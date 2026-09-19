@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-mongoose.set('strictQuery', true);
+mongoose.set("strictQuery", true);
 const Schema = mongoose.Schema;
 
 const CampgroundSchema = new Schema({
@@ -8,6 +8,12 @@ const CampgroundSchema = new Schema({
   image: String,
   description: String,
   location: String,
+  reviews: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Review",
+    },
+  ],
 });
 
 module.exports = mongoose.model("Campground", CampgroundSchema);
